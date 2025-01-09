@@ -1,0 +1,1 @@
+pyinstaller -F "Device data collector.py"

@@ -1,0 +1,61 @@
+[
+    {
+        "slaveid":1,
+        "type":"water",
+        "sensordata": 
+            {
+                "pressure": {
+                    "register": [4],
+                    "type": "float",
+                    "unit": "Mpa"
+                }
+            }
+    },
+    {
+        "slaveid":2,
+        "type":"water",
+        "sensordata":{
+            "flowrate":{
+                "register": [2,3],
+                "type":"float",
+                "unit":"m3/h"
+            },
+            "pressure":{
+                "register":[4,5],
+                "type":"float",
+                "unit":"Mpa"
+            },
+            "temperature":{
+                "register":[0,1],
+                "type":"float",
+                "unit":"C"
+            }
+        }
+    },
+    {
+        "slaveid":3,
+        "type":"electric",
+        "sensordata":{
+            "current_average":{
+                "register":[1006,1007],
+                "type":"float",
+                "unit":"A"
+            },
+            "phase_voltage_average":{
+                "register":[10016,10017],
+                "type":"float",
+                "unit":"V"
+            },
+            "active_power":{
+                "register":[10034,10035],
+                "type":"float",
+                "unit":"kW"
+            },
+            "power_factor":{
+                "register":[10058,10059],
+                "type":"float",
+                "unit":"-"
+            }
+        }
+    }
+]
